@@ -1,0 +1,95 @@
+.api-settings {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-radius: 20px;
+  padding: 24px 32px;
+  margin: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInDown 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.api-settings:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.api-settings-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.api-settings-group label {
+  color: #1d1d1f;
+  font-weight: 500;
+  font-size: 17px;
+  white-space: nowrap;
+  letter-spacing: -0.022em;
+}
+
+.api-key-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 14px 18px;
+  background: rgba(245, 245, 247, 0.6);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  color: #1d1d1f;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  font-size: 17px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.022em;
+}
+
+.api-key-input:focus {
+  outline: none;
+  border-color: rgba(0, 113, 227, 0.5);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.15),
+              0 8px 24px rgba(0, 113, 227, 0.1);
+  transform: translateY(-1px);
+}
+
+.balance-info {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: rgba(0, 113, 227, 0.1);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border-radius: 14px;
+  color: #1d1d1f;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid rgba(0, 113, 227, 0.2);
+  animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

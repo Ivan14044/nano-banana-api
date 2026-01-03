@@ -1,0 +1,23 @@
+{
+  "name": "nanobanana-pro-web",
+  "version": "1.0.0",
+  "description": "NanoBanana Pro Web - веб-версия генератора изображений",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python app.py",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/nanobanana-pro-web.git"
+  },
+  "keywords": [
+    "nanobanana",
+    "image-generation",
+    "ai",
+    "react",
+    "flask"
+  ],
+  "author": "",
+  "license": "MIT"
+}
