@@ -1,6 +1,17 @@
 # Инструкция по деплою NanoBanana Pro Web
 
-## Архитектура
+## Варианты деплоя
+
+### Вариант 1: Vercel + Railway (платный после пробного периода)
+См. инструкции ниже.
+
+### Вариант 2: Vercel + Render.com (бесплатный) ⭐ Рекомендуется
+См. [DEPLOY_RENDER.md](DEPLOY_RENDER.md) - подробные инструкции для бесплатного деплоя.
+
+### Вариант 3: Vercel + Fly.io (бесплатный)
+См. [DEPLOY_FLY.md](DEPLOY_FLY.md) - инструкции для Fly.io.
+
+## Архитектура (Railway вариант)
 
 - **Frontend (React)** → Vercel (бесплатный домен: `your-app.vercel.app`)
 - **Backend (Flask)** → Railway (бесплатный домен: `your-app.up.railway.app`)

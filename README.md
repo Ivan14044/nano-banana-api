@@ -24,9 +24,15 @@ npm run dev
 
 ## 📦 Деплой
 
-### Деплой на Vercel + Railway
+### Варианты деплоя
 
-См. подробные инструкции в [DEPLOY.md](DEPLOY.md) или [QUICK_DEPLOY.md](QUICK_DEPLOY.md)
+**Рекомендуется (бесплатный):** [DEPLOY_RENDER.md](DEPLOY_RENDER.md) - Vercel + Render.com
+
+**Альтернативы:**
+- [DEPLOY.md](DEPLOY.md) - Vercel + Railway (платный после пробного периода)
+- [DEPLOY_FLY.md](DEPLOY_FLY.md) - Vercel + Fly.io (бесплатный)
+
+**Быстрый старт:** [QUICK_DEPLOY_RENDER.md](QUICK_DEPLOY_RENDER.md)
 
 **Кратко:**
 1. Загрузите код в GitHub

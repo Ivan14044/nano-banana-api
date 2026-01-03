@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: nanobanana-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 2 -b 0.0.0.0:$PORT --timeout 120 app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: CORS_ORIGINS
+        value: http://localhost:3000,http://localhost:5173
+        # После деплоя фронтенда обновите это значение, добавив Vercel URL
