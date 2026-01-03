@@ -56,8 +56,10 @@ def create_app():
     return app
 
 
+# Создаем экземпляр приложения для Gunicorn
+app = create_app()
+
 if __name__ == "__main__":
-    app = create_app()
     port = int(os.getenv('PORT', 5000))
     debug = os.getenv('FLASK_ENV') != 'production'
     app.run(debug=debug, host="0.0.0.0", port=port)
